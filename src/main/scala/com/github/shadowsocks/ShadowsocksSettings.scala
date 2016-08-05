@@ -177,7 +177,7 @@ class ShadowsocksSettings extends PreferenceFragment with OnSharedPreferenceChan
         }
       })
 
-      new AlertDialog.Builder(activityR.style.Theme.Material)
+      new AlertDialog.Builder(activity,android.R.style.Theme.Material)
         .setTitle(getString(R.string.about_title).formatLocal(Locale.ENGLISH, app.getVersionName))
         .setNegativeButton(getString(android.R.string.ok), null)
         .setView(web)
